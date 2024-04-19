@@ -17,14 +17,27 @@ public class Question6 {
         Thread thread1 = new Thread(t1);
         Thread thread2 = new Thread(t2);
         Thread thread3 = new Thread(t3);
+//        try {
+//            thread1.start();
+//            thread1.join();
+//            thread2.start();
+//            thread2.join();
+//            thread3.start();
+//            thread3.join();
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+
+        //Output for above:
+//        1 2 3
+//        1 2 3
+//        1 2 3
+
         thread1.start();
         thread2.start();
         thread3.start();
     }
 }
 
-//Output can vary : 3 1s, 3 2s, 3 4s (Any order) majorly 1 coming at start
-//1 1 1 2 2 3 2
-//        3
-//        3
+
 
